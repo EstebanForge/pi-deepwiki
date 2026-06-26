@@ -1,0 +1,52 @@
+{
+  "name": "@estebanforge/pi-deepwiki",
+  "version": "1.0.0",
+  "description": "DeepWiki (deepwiki.com) docs tool for Pi. Adds deepwiki_wiki_structure and deepwiki_ask_question tools that query the hosted DeepWiki MCP service over plain HTTP. No MCP adapter required. AI-powered documentation for any public GitHub repository.",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "deepwiki",
+    "documentation",
+    "github",
+    "codebase-docs",
+    "ai",
+    "coding-agent"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "EstebanForge",
+    "email": "esteban@actitud.cl",
+    "url": "https://actitud.xyz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EstebanForge/pi-deepwiki.git"
+  },
+  "type": "module",
+  "files": [
+    "extensions",
+    "lib",
+    "README.md"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "peerDependenciesMeta": {
+    "@earendil-works/pi-coding-agent": {
+      "optional": true
+    },
+    "typebox": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.8.0"
+  }
+}
